@@ -3,7 +3,7 @@ import carrinhoReducer from './reducers/carrinho'
 import favoritoReducer from './reducers/favoritar'
 import api from '../services/api'
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
     carrinho: carrinhoReducer,
